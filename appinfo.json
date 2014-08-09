@@ -1,0 +1,19 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "Peter Woodward",
+    "longName": "WatchFace",
+    "projectType": "native",
+    "resources": {
+        "media": []
+    },
+    "shortName": "WatchFace",
+    "uuid": "06a0f0e8-61b7-48fb-b548-b68904371877",
+    "versionCode": 1,
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": true
+    }
+}
