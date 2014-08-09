@@ -48,7 +48,7 @@ static void initialise_ui(void) {
   weather_layer = text_layer_create(GRect(10, 116, 80, 42));
   text_layer_set_background_color(weather_layer, GColorClear);
   text_layer_set_text_color(weather_layer, GColorWhite);
-  text_layer_set_text(weather_layer, "");
+  text_layer_set_text(weather_layer, "Loading...");
   text_layer_set_font(weather_layer, s_res_gothic_18_bold);
   layer_add_child(window_get_root_layer(s_window), (Layer *)weather_layer);
   

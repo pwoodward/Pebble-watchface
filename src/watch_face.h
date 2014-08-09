@@ -11,4 +11,8 @@ extern TextLayer *date_layer;
 extern TextLayer *weather_layer;
 extern TextLayer *power_layer;
 
+// AppMessage Keys
+#define KEY_TEMPERATURE 0
+#define KEY_CONDITIONS 1
+
 #endif /* WATCH_FACE_H */
