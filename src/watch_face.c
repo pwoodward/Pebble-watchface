@@ -21,7 +21,7 @@ static void initialise_ui(void) {
   s_res_roboto_bold_subset_49 = fonts_get_system_font(FONT_KEY_ROBOTO_BOLD_SUBSET_49);
   s_res_gothic_18_bold = fonts_get_system_font(FONT_KEY_GOTHIC_18_BOLD);
   // time_layer
-  time_layer = text_layer_create(GRect(7, 50, 130, 60));
+  time_layer = text_layer_create(GRect(7, 70, 130, 60));
   text_layer_set_background_color(time_layer, GColorClear);
   text_layer_set_text_color(time_layer, GColorWhite);
   text_layer_set_text(time_layer, "00:00");
@@ -29,7 +29,7 @@ static void initialise_ui(void) {
   layer_add_child(window_get_root_layer(s_window), (Layer *)time_layer);
   
   // date_layer
-  date_layer = text_layer_create(GRect(10, 10, 124, 42));
+  date_layer = text_layer_create(GRect(10, 30, 124, 42));
   text_layer_set_background_color(date_layer, GColorClear);
   text_layer_set_text_color(date_layer, GColorWhite);
   text_layer_set_text(date_layer, "");
@@ -37,15 +37,15 @@ static void initialise_ui(void) {
   layer_add_child(window_get_root_layer(s_window), (Layer *)date_layer);
   
   // top_line
-  top_line = inverter_layer_create(GRect(7, 52, 130, 4));
+  top_line = inverter_layer_create(GRect(7, 72, 130, 4));
   layer_add_child(window_get_root_layer(s_window), (Layer *)top_line);
   
   // bottom_line
-  bottom_line = inverter_layer_create(GRect(7, 112, 130, 4));
+  bottom_line = inverter_layer_create(GRect(7, 132, 130, 4));
   layer_add_child(window_get_root_layer(s_window), (Layer *)bottom_line);
   
   // weather_layer
-  weather_layer = text_layer_create(GRect(10, 116, 80, 42));
+  weather_layer = text_layer_create(GRect(10, 138, 80, 20));
   text_layer_set_background_color(weather_layer, GColorClear);
   text_layer_set_text_color(weather_layer, GColorWhite);
   text_layer_set_text(weather_layer, "Loading...");
@@ -57,6 +57,7 @@ static void initialise_ui(void) {
   text_layer_set_background_color(power_layer, GColorClear);
   text_layer_set_text_color(power_layer, GColorWhite);
   text_layer_set_text(power_layer, "");
+  text_layer_set_font(power_layer, s_res_gothic_18_bold);
   text_layer_set_text_alignment(power_layer, GTextAlignmentRight);
   layer_add_child(window_get_root_layer(s_window), (Layer *)power_layer);
 }
